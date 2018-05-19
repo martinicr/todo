@@ -1,19 +1,14 @@
 language: java
 jdk:
-  - oraclejdk8
-
-#blocklist
-branches:
-  except:
-    - test
-
-#safelist
+- oraclejdk8
 branches:
   only:
   - master
   - int
-
-#deploy:
-#  provider: heroku
-#  api_key:
-#  app: todo
+deploy:
+  provider: heroku
+  api_key:
+    secure: kxi+9Nakm0OC8fVFb+hLgXDOcx8lH8rV8srWAMjqvpU+bhoH2JBgaQFHnOkYcQdeu7yuR8Sl/mcwNRN7hgpDZ4k6BmIQj9JJkgXB/Sf78cQPuK0UOzHuMwTj9i+ev/AIanoty1FTUeBZoLcdp3s1rtmpPa5e4+yG0wqtHSsvfpY4ZcN0+C/SkJJ4lMCnj43ePrhAxCC3DA9TyAsCCglxowJN/skMl/JWk538Xfdv40VJ6kFncENRYyGKfEwUW5g0CMfrAVGG38Lui/hhO6w48uggBj45zhPu7ZTLg/b2EE2oZm841HxcQfmjons+i6H6qD6+zI+Hz0MbSc8M1dqJhew3/txdniGFKU1KfYce+kQYDIVu6BjiOIbd99tZ6Oh/abSI0kqrl4tTxozwdSQNyIHQE2zRl+M/9cA29kM6dMa3RG4uPwVXY5Hmfqz54WZONl4MmaAVHHRYrx59HS6zHB+8+WizZw9hr4GwJ19tl52FRCn06F8Uplux3kGJ0NuQw0CtJfJKHt/UKS9Cd7dHS4JGe/G1rmJBfTMZ4rEc+JGX8SO7Q+2+K+OO0ZnuV2jO8z1foLup3pkz7g8rxs2ynYmBKTV3Qx+22wCDgpRq8pSYfosQrsgEq3cRIyqe/l1oFamj9QHrFEiP7ZR85xYCmfjFv3D8J8h3iOCOrvUpUc4=
+  app:
+    master: todo-kt
+    int: todo-kt-int
