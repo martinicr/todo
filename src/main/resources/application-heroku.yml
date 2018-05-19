@@ -6,11 +6,11 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
   datasource:
     platform: postgresql
-#    url: jdbc:postgresql://ec2-50-16-196-238.compute-1.amazonaws.com:5432/dcn6gfsvo80dtq?user=irsntedegjojko&password=224604b35472d750625cd516ef46415a5a74bb8e8bc940938e7a560f171745cb&sslmode=require
+    url: jdbc:postgresql://ec2-50-16-196-238.compute-1.amazonaws.com:5432/dcn6gfsvo80dtq?user=irsntedegjojko&password=224604b35472d750625cd516ef46415a5a74bb8e8bc940938e7a560f171745cb&sslmode=require
 #    url: heroku run echo \$JDBC_DATABASE_URL
-    url: ${JDBC_DATABASE_URL}
-    username: ${JDBC_DATABASE_USERNAME}
-    password: ${JDBC_DATABASE_PASSWORD}
+#    url: ${JDBC_DATABASE_URL}
+#    username: ${JDBC_DATABASE_USERNAME}
+#    password: ${JDBC_DATABASE_PASSWORD}
     hikari:
       connection-timeout: 3000
       maximum-pool-size: 10
