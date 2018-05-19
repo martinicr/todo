@@ -1,0 +1,1 @@
+insert into todo(created, title, summary) values('2018-05-22', 'Heroku todo', 'PROD!');
