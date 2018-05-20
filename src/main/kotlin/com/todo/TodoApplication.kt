@@ -21,6 +21,12 @@ fun main(args: Array<String>) {
 }
 
 
+enum class TaskStatus {
+    NOT_STARTED,
+    IN_PROGRESS,
+    DONE
+}
+
 @Entity
 data class Todo(
     @Id
@@ -29,7 +35,8 @@ data class Todo(
 
     val created: Date? = null,
     val title: String? = null,
-    val summary: String? = null
+    val summary: String? = null,
+    val status: TaskStatus? = TaskStatus.NOT_STARTED
 ) : Serializable
 
 @Repository
