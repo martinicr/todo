@@ -5,6 +5,7 @@ branches:
   only:
   - master
   - int
+  - test
 deploy:
   provider: heroku
   api_key:
