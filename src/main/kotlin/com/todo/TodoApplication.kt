@@ -20,7 +20,9 @@ fun main(args: Array<String>) {
     runApplication<TodoApplication>(*args)
 }
 
-
+/**
+ * Enum Class with the status of the TODO
+ */
 enum class TaskStatus {
     NOT_STARTED,
     IN_PROGRESS,
